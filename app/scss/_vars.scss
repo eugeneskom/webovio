@@ -1,0 +1,22 @@
+$default: rgba(77, 83, 60, 1);
+$text: rgba(77, 83, 60, 0.9);
+$secondary: #fff;
+$accent: #FFD723;
+
+
+%poppins-400 {
+  font-family: 'Poppins-Regular', sans-serif;
+  font-weight: 400;
+}
+%poppins-500 {
+  font-family: 'Poppins-Medium', sans-serif;
+  font-weight: 500;
+}
+%poppins-600 {
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
