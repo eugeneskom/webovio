@@ -86,7 +86,7 @@
   max-width: 1276px;
   margin-left: auto;
   z-index: 10;
-  padding: 60px 133px 54px 32px;
+  padding: 60px 166px 54px 32px;
 
   &__list {
     display: flex;
@@ -141,6 +141,9 @@
   &__card-heading {
     margin-bottom: 35px;
     padding-right: 9px;
+  }
+  &__text{
+    margin-bottom: 42px;
   }
 
 
@@ -352,22 +355,6 @@
     margin-bottom: 50px;
   }
 
-  &__subtitle {
-    margin-bottom: 8px;
-    line-height: 40px;
-    color: #B6C197;
-  }
-
-  &__phone {
-    margin-right: 128px;
-  }
-
-  &__phone-number,
-  &__address {
-    font-weight: 700;
-    line-height: 40px;
-  }
-
   &__bottom {
     display: flex;
     justify-content: space-between;
@@ -390,7 +377,7 @@
 
   &__list-link {
     color: #B6C197;
-    line-height: 40px;
+    line-height: 2.5;
 
     &:hover {
       color: $accent;
@@ -399,7 +386,7 @@
 
   &__text {
     color: #B6C197;
-    line-height: 26px;
+    line-height: 1.625;
     max-width: 230px;
     margin-bottom: 23px;
   }
@@ -408,7 +395,7 @@
     font-weight: 700;
     display: block;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 1.46;
     margin-bottom: 24px;
   }
 
