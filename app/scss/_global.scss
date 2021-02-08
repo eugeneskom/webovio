@@ -87,6 +87,9 @@ a {
   &__text {
     margin-bottom: 90px;
     line-height: 1.625;
+    p{
+      @include text-clamp(4);
+    }
     & p:not(:last-child){
       margin-bottom: 25px;
     }
@@ -104,6 +107,7 @@ a {
     font-style: italic;
     line-height: 1.625;
     margin-bottom: 24px;
+    @include text-clamp(4);
   }
 
   &__wrapper {

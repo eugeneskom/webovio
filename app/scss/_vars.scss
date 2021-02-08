@@ -4,19 +4,15 @@ $secondary: #fff;
 $accent: #FFD723;
 
 
-%poppins-400 {
-  font-family: 'Poppins-Regular', sans-serif;
-  font-weight: 400;
-}
-%poppins-500 {
-  font-family: 'Poppins-Medium', sans-serif;
-  font-weight: 500;
-}
-%poppins-600 {
-  font-family: 'Poppins-SemiBold', sans-serif;
-  font-weight: 600;
-}
-%poppins-700 {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
+@mixin text-clamp($lines: 2, $line-height: false) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+
+  // Fallback for non-Webkit browsers
+  // (won't show `…` at the end of the block)
+  @if $line-height {
+      max-height: $line-height * $lines * 1px;
+  }
 }
