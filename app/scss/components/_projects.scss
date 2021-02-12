@@ -1,0 +1,182 @@
+.projects {
+  &__inner {
+    padding: 150px 0 160px;
+  }
+
+  &__intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 102px;
+  }
+
+  &__heading {
+    max-width: 335px;
+    line-height: 1.5;
+    margin-right: 125px;
+  }
+
+  &__description {
+    max-width: 460px;
+    line-height: 1.625;
+    @include text-clamp(4);
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 165px;
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-start;
+    }
+
+    &:nth-child(odd) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__wallpaper {
+    max-width: 735px;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    &:nth-child(odd) {
+      margin-right: 96px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 96px;
+    }
+  }
+
+
+  &__person {
+    position: absolute;
+    bottom: -35px;
+
+    &--right {
+      right: -40px;
+    }
+
+    &--left {
+      left: -40px;
+    }
+  }
+
+  &__card {
+    margin-top: 81px;
+    &:nth-child(odd){
+      padding-left: 10px;
+    }
+    &:nth-child(even){
+      padding-right: 10px;
+    }
+  }
+
+  &__card-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+@media(max-width:1200px){
+  .projects{
+    &__inner{
+      padding: 50px 0;
+    }
+    &__intro{
+      margin-bottom: 50px;
+    }
+    &__item{
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+    &__card{
+      margin-top: 30px;
+    }
+    &__wallpaper{
+      &:nth-child(odd) {
+        margin-right: 40px;
+      }
+  
+      &:nth-child(even) {
+        margin-left: 40px;
+      }
+    }
+    &__person {
+      position: absolute;
+      bottom: 0;
+  
+      &--right {
+        right: 0;
+      }
+  
+      &--left {
+        left: 0;
+      }
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .projects{
+    &__intro{
+      flex-direction: column;
+    }
+    &__heading{
+      max-width: 80%;
+      margin:0 auto 30px;
+    }
+    &__description{
+      max-width: 80%;
+    }
+    &__item{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__wallpaper {
+      margin-bottom: 50px;  
+      &:nth-child(odd) {
+        margin-right: 0px;
+      }
+  
+      &:nth-child(even) {
+        margin-left: 0px;
+      }
+    }
+    .card{
+      order: -1;
+      max-width: 70%;
+      margin-bottom: 60px;
+    }
+  }
+  
+}
+@media(max-width: 768px){
+  .projects{
+    &__heading,
+    &__description{
+      max-width: 100%;
+    }
+    .card{
+      max-width: 100%;
+    }
+  }
+}

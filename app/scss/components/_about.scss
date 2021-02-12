@@ -1,0 +1,109 @@
+.about {
+  &__inner {
+    max-width: 1140px;
+    padding: 0 15px 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(33, 56, 66, 0.096);
+  }
+
+  .person-box {
+    padding-top: 238px;
+    max-width: 475px;
+
+    &__description {
+      font-size: 24px;
+      line-height: 1.67;
+      font-style: italic;
+      margin-bottom: 50px;
+      max-width: 426px;
+      width: 100%;
+      @include text-clamp(5)
+    }
+
+    &__box {
+      display: flex;
+      align-items: center;
+      max-width: 358px;
+    }
+
+    &__avatar {
+      margin-right: 30px;
+      max-width: 90px;
+      width: 90px;
+      max-height: 90px;
+      height: 90px;
+      display: block;
+      border-radius: 50%;
+      filter: drop-shadow(20px 25px 43px rgba(0, 0, 0, 0.18));
+    }
+
+    &__name {
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    &__position {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+
+  }
+  .card{
+    padding-top: 235px;
+    &__heading {
+      margin-bottom: 35px;
+      padding-right: 9px;
+    }
+  
+    &__text {
+      margin-bottom: 42px;
+    }
+  }
+
+}
+
+@media(max-width: 1200px){
+  .about{
+    &__inner{
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media(max-width:992px){
+  .about{
+    &__inner{
+      flex-direction: column;
+      align-items: center;
+    }
+    .card{
+      padding-top: 130px;
+      margin-bottom: 50px;
+      max-width: 80%;
+    }
+    .person-box{
+      max-width: 80%;
+      width: 80%;
+      padding-top: 50px;
+      &__description{
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .about{
+    .card,
+    .person-box{
+      max-width:100%;
+      width: 100%;
+    }
+    
+  }
+}
